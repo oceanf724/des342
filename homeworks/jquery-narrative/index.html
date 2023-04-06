@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>I'm a header</h1>
+        <div id="scene-one">
+            <img src="images/easterbunny-01.jpg" alt="">
+        </div>
+        <div id="scene-two" class="hide">
+            <img src="images/easterbunny-02.jpg" alt="">
+        </div>
+        <div id="scene-three" class="hide">
+            <img src="images/easterbunny-03.jpg" alt="">
+        </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        // $(this).click(function() {
+        //     $(this).addClass('hide')
+        //     $('scene').not(this).addClass('hide')
+        //     $(this).removeClass('hide')
+        // })
+        $('#scene-one').click(function(){
+            $('#scene-one').toggleClass('hide')
+            $('#scene-two').toggleClass('hide')
+        })
+        $('#scene-two').click(function(){
+            $('#scene-two').toggleClass('hide')
+            $('#scene-three').toggleClass('hide')
+        })
+        $('#scene-three').click(function(){
+            $('#scene-three').toggleClass('hide')
+            $('#scene-one').toggleClass('hide')
+        })
+    </script>
+</body>
+</html>
