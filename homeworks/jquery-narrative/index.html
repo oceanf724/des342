@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery</title>
+    <title>The Easter Bunny in a Dive Bar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>I'm a header</h1>
+        <h1>The Easter Bunny in a Dive Bar</h1>
         <div id="scene-one">
             <img src="images/easterbunny-01.jpg" alt="">
         </div>
@@ -17,6 +17,18 @@
         </div>
         <div id="scene-three" class="hide">
             <img src="images/easterbunny-03.jpg" alt="">
+        </div>
+        <div id="scene-four" class="hide">
+            <img src="images/easterbunny-04.jpg" alt="">
+        </div>
+        <div id="scene-five" class="hide">
+            <img src="images/easterbunny-05.jpg" alt="">
+        </div>
+        <div id="scene-six" class="hide">
+            <img src="images/easterbunny-06.jpg" alt="">
+        </div>
+        <div id="scene-seven" class="hide">
+            <img src="images/easterbunny-07.jpg" alt="">
         </div>
     
 
@@ -38,6 +50,22 @@
         })
         $('#scene-three').click(function(){
             $('#scene-three').toggleClass('hide')
+            $('#scene-four').toggleClass('hide')
+        })
+        $('#scene-four').click(function(){
+            $('#scene-four').toggleClass('hide')
+            $('#scene-five').toggleClass('hide')
+        })
+        $('#scene-five').click(function(){
+            $('#scene-five').toggleClass('hide')
+            $('#scene-six').toggleClass('hide')
+        })
+        $('#scene-six').click(function(){
+            $('#scene-six').toggleClass('hide')
+            $('#scene-seven').toggleClass('hide')
+        })
+        $('#scene-seven').click(function(){
+            $('#scene-seven').toggleClass('hide')
             $('#scene-one').toggleClass('hide')
         })
     </script>
